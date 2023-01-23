@@ -1,5 +1,4 @@
 import { connection } from '../db.js'
-import bcrypt from 'bcrypt'
 
 export const getArtists = async (req, res) => {
     await connection.query('SELECT * FROM artist')
